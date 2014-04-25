@@ -9,7 +9,7 @@ Estudantes: <br>
             Matheus Ferraz<br>
             Rudmar Rodrigues<br>
             
-Disciplinas: Paradigmas de Programação
+Disciplinas: Paradigmas de Programação<br>
 Orientadora: Milene Serrano
 
 Tema: <h5>Agenda ___</h5>
