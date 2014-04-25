@@ -3,7 +3,7 @@ Seja Bem-Vindo
 
 <h5>Universidade de Brasilia - FGA</h5>
 
-Estudantes: <br><br>
+Estudantes: <br>
             Augusto Modesto<br>
             Jonathan Moraes<br>
             Matheus Ferraz<br>
