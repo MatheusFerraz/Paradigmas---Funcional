@@ -1,7 +1,7 @@
 Seja Bem-Vindo 
 ======================
 
-<center>Universidade de Brasilia - FGA</center>
+<h5>Universidade de Brasilia - FGA</h5>
 
 Estudantes: Augusto Modesto
             Jonathan Moraes
