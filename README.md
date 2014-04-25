@@ -12,6 +12,4 @@ Estudantes: <br>
 Disciplinas: Paradigmas de Programação
 Orientadora: Milene Serrano
 
-Tema: Agenda ___
-
-<h1> Exemplo Teste <h1>
+Tema: <h5>Agenda ___</h5>
