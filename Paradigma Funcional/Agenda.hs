@@ -1,6 +1,8 @@
 module Agenda (Agenda, Nome, Telefone, pesquisaNome, quantosContatos, insereNovoContato, retiraContato, mostraAgenda) where
 
 data Agenda a = [(Nome,Telefone)]
+	Nome = [[Char]]
+	Telefone = [Char]
 
 pesquisaNome :: Agenda -> Nome -> Telefone
 
