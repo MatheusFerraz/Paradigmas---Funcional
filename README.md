@@ -4,9 +4,9 @@ Seja Bem-Vindo
 <h5>Universidade de Brasilia - FGA</h5>
 
 Estudantes: Augusto Modesto
-            Jonathan Moraes
-            Matheus Ferraz
-            Rudmar Rodrigues
+            Jonathan Moraes<br>
+            Matheus Ferraz<br>
+            Rudmar Rodrigues<br>
             
 Disciplinas: Paradigmas de Programação
 Orientadora: Milene Serrano
