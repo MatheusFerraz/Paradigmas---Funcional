@@ -12,4 +12,4 @@ Estudantes: <br>
 Disciplinas: Paradigmas de Programação<br>
 Orientadora: Milene Serrano
 
-Tema: <h5>Agenda ___</h5>
+Tema: <h5>Calculadora Funcional</h5>
