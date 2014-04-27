@@ -1,6 +1,6 @@
 module Main where
 
-import FuncoesGenericas (somaLista, multiplicaLista, subtraiValores, calculaMdc, calculaDelta, calculaSolQuadratica)
+import FuncoesGenericas (somaLista, multiplicaLista, subtraiValores, calculaMdc, calculaDelta, calculaSolQuadratica, calculaMmc)
 
 main = do
     putStrLn "Bem vindo ao programa que simula uma Calculadora simples!"
@@ -16,4 +16,6 @@ main = do
     print ( calculaSolQuadratica 1 8 16 )
     putStrLn ("A seguir, tem-se a exemplificacao do calculo do mdc entre os numeros 24 e 12.")
     print ( calculaMdc 24 12 )
+    putStrLn ("A seguir, tem-se a exemplificacao do calculo do mmc entre os numeros 24 e 12.")
+    print (calculaMmc 24 12)
     putStrLn "Agradecemos por usar o Programa."
