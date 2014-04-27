@@ -1,4 +1,4 @@
-module FuncoesGenericas (somaLista, multiplicaLista, subtraiValores, contaLista, calculaMdc, calculaDelta, calculaSolQuadratica) where
+module FuncoesGenericas (somaLista, multiplicaLista, subtraiValores, contaLista, calculaMdc, calculaDelta, calculaSolQuadratica, calculaMmc) where
 
 --Funcao para Soma dos Valores da Lista utilizando recursividade
 somaLista :: [Float] -> Float
@@ -34,3 +34,8 @@ calculaDelta va vb vc = ((vb^2) - (4 * va * vc))
 calculaSolQuadratica :: Float -> Float -> Float -> (Float, Float)
 calculaSolQuadratica va vb vc = if(calculaDelta va vb vc) < 0.0  then undefined
 	                            else ((((-vb) + sqrt(calculaDelta va vb vc)) / (2.0 * va)), (((-vb) - sqrt(calculaDelta va vb vc)) / (2.0 * va)))
+
+--Funcao para calcular o MMC entre dois numeros de entrada utilizando funcoes prontas de mmc e mdc do Haskell
+calculaMmc :: Int -> Int -> Int
+calculaMmc n1 n2 = (n1 * n2) `div` (calculaMdc n1 n2)
+
