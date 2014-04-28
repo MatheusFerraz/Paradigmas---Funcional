@@ -1,8 +1,9 @@
+module Menu where
 
---MENU-------------------------------------------------------------------------------------
-
+--Para limpar a tela
 limpaTela = putStrLn "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
+--Menu Inicial
 inicio = do 	putStrLn " \n"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		putStrLn " +           Seja Bem-Vindo            +"
@@ -12,20 +13,26 @@ inicio = do 	putStrLn " \n"
 		putStrLn " +  1. Soma                            +" 
 		putStrLn " +  2. Subtração                       +"
 		putStrLn " +  3. Multiplicação                   +"
-		putStrLn " +  4. Divisão                         +"
-		putStrLn " +  5. Média                           +"
-		putStrLn " +  6. Fatorial                        +"
-		putStrLn " +  7. Exponencial                     +"
-		putStrLn " +  8. MDC                             +"
+		putStrLn " +  4. Fatorial                        +"
+		putStrLn " +  5. Exponencial                     +"
+		putStrLn " +  6. Logaritmo Natural               +"
+		putStrLn " +  7. Media                           +"
+		putStrLn " +  8. Esqucao de 2º                   +"
 		putStrLn " +  9. MMC                             +"
-		putStrLn " +  10. Função de 2º Grau              +"
-		putStrLn " +  11. Ajuste Linear                  +"
+		putStrLn " +  10. MDC                            +"
+		putStrLn " +  11. Quadrado                       +"
+		putStrLn " +  12. Ajuste Linear                  +"
+		putStrLn " +  13. Ajuste Parabolico              +"
+		putStrLn " +  14. Ajuste Hiperbolico             +"
+		putStrLn " +  15. Ajuste Logaritco               +"
 		putStrLn " +  0. Sair                            +" 
 		putStrLn " +                                     +"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" 
-		
+
+--Menu Continuar
 continuar = do	putStrLn "\nPrecione ENTER para continuar!\n"
-		
+
+--Menu Sair
 menusair = do 	putStrLn " \n"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		putStrLn " +           Seja Bem-Vindo            +"
@@ -39,12 +46,13 @@ menusair = do 	putStrLn " \n"
 		putStrLn " +                                     +"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"  		
 
+--Menu Soma
 menusoma = do 	putStrLn " \n"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		putStrLn " +           Seja Bem-Vindo            +"
 		putStrLn " +       -Calculadora Funcional-       +"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-		putStrLn " +       Para realizar a soma          +"
+		putStrLn " +       Para realizar a Soma          +"
 		putStrLn " +        dos numeros digite:          +"
 		putStrLn " +   somaLista [<numeros_desejados>]   +"
 		putStrLn " +     Observe o exemplo a seguir:      +"
@@ -53,14 +61,31 @@ menusoma = do 	putStrLn " \n"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		putStrLn " +Ao finalizar, digite 'main' novamente+"	
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"		
-		
-menumultiplica = do 	putStrLn " \n"
+
+--Menu Subtração
+menusub = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn	 " +           Seja Bem-Vindo        +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +       Para realizar a Subtracao     +"
+		putStrLn " +          dos numeros digite:        +"
+		putStrLn " +   subtraiValor <numero1> <numero2>  +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +           subtraiValor 4 2          +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+
+--Menu Multiplicação
+menumult = do 	putStrLn " \n"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		putStrLn " +           Seja Bem-Vindo            +"
 		putStrLn " +       -Calculadora Funcional-       +"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-		putStrLn " +    Para realizar a multiplixação    +"
-		putStrLn " +        dos numeros digite:          +"
+		putStrLn " +    Para realizar a Multiplixação    +"
+		putStrLn " +         dos numeros digite:         +"
 		putStrLn " +multiplicaLista [<numeros_desejados>]+"
 		putStrLn " +     Observe o exemplo a seguir:     +"
 		putStrLn " +      multiplicaLista [1,2,3,4]      +"
@@ -68,43 +93,131 @@ menumultiplica = do 	putStrLn " \n"
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		putStrLn " +Ao finalizar, digite 'main' novamente+"	
 		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
-		
 
+--Menu Fatorial
+menufat = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +       Para realizar a Fatorial      +"
+		putStrLn " +         de um numero digite:        +"
+		putStrLn " +     fatorial <numeros_desejados>    +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +             fatorial 10             +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
---MAIN----------------------------------------------------------------------------------------------------------------
+--Menu Exponencial
+menuexp = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +     Para realizar a Exponencial     +"
+		putStrLn " +        dos numeros digite:          +"
+		putStrLn " +   exponencial <base> <expoente>   +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +         exponencial 2 4             +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
-main = start x
+--Menu LN
+menuln = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +         Para realizar a LN          +"
+		putStrLn " +         dos numeros digite:         +"
+		putStrLn " +    logLista [<numeros_desejados>]   +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +          logLista [1,2,3,4]         +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
-x = ""
+--Menu Média
+menumedia = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +       Para realizar a Media         +"
+		putStrLn " +        dos numeros digite:          +"
+		putStrLn " +     media [<numeros_desejados>]     +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +           media [1,2,3,4]           +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
-start y = do
-		limpaTela
-		inicio
-		numeroMenu <- getLine
-		case numeroMenu of
-			"0" -> sair y
-			"1" -> soma y
-			otherwise -> do {putStrLn "\nOpcao Invalida!"; continuar ; start y}
-			
+--Menu Equação de 2ª grau
+menuequa = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +   Para realizar uma Equacao de 2º   +"
+		putStrLn " +              igite:                 +"
+		putStrLn " +   calculaSolQuadratica <a> <b> <c>  +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +      calculaSolQuadratica 2 7 5     +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
-sair y = do
-		limpaTela
-		menusair
-		numeroMenu <- getLine
-		case numeroMenu of
-			"1" -> return()
-			"2" -> start y
-			otherwise -> do {putStrLn "\nOpcao Invalida!"; continuar ; sair y}
+--Menu MMC
+menummc = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +         Para realizar o MMC         +"
+		putStrLn " +               digite:               +"
+		putStrLn " +    calculaMmc <numero1> <numero2>   +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +           calculaMmc 25 75          +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
+--Menu MDC
+menumdc = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +         Para realizar o MDC         +"
+		putStrLn " +               digite:               +"
+		putStrLn " +    calculaMdc <numero1> <numero2>   +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +           calculaMdc 25 75          +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
-soma y = do
-		limpaTela
-		menusoma
-
-		
-
-
-
-
-
-
+--Menu Função Quadratica
+menuquad = do 	putStrLn " \n"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +           Seja Bem-Vindo            +"
+		putStrLn " +       -Calculadora Funcional-       +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +     Para realizar a Quadrado        +"
+		putStrLn " +        dos numeros digite:          +"
+		putStrLn " + quadradoLista [<numeros_desejados>] +"
+		putStrLn " +     Observe o exemplo a seguir:     +"
+		putStrLn " +       quadradoLista [1,2,3,4]       +"
+		putStrLn " +  O resultado aparecerá em seguida   +"
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		putStrLn " +Ao finalizar, digite 'main' novamente+"	
+		putStrLn " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
