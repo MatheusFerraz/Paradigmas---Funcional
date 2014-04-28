@@ -6,6 +6,6 @@ calculaMdc n1 n2 | n1 < n2 = calculaMdc n2 n1
                  | n2 == 0 = n1
                  | otherwise = calculaMdc n2 (mod n1 n2)
 
---Funcao para calcular o MMC entre dois numeros de entrada utilizando funcoes prontas de mmc e mdc do Haskell
+--Funcao para calcular o MMC entre dois numeros de entrada utilizando funcoes do Haskell e a funcao feita anteriormente de mdc para o calculo
 calculaMmc :: Int -> Int -> Int
 calculaMmc n1 n2 = (n1 * n2) `div` (calculaMdc n1 n2)
