@@ -1,24 +1,85 @@
 module Main where
 
+import Menu
 import Expressoes
 import MinMax
 import MMQ
 import Listas
 
-main = do
-    putStrLn "Bem vindo ao programa que simula uma Calculadora simples!"
-    putStrLn "O objetivo desse modulo e disparar funcoes dos outros modulos!"
-    putStrLn ("A seguir, tem-se os resultados das operacoes de soma e multiplicacao com os elementos da Lista [1,2,3,4].")
-    print ( somaLista [1,2,3,4] )
-    print ( multiplicaLista [1,2,3,4] )
-    putStrLn ("A seguir, apresenta-se o resultado da diferenca entre os numeros 10 e 5.")
-    print( subtraiValores 10 5 )
-    putStrLn ("A seguir, tem-se a exemplificacao do calculo do delta para a equacao x^2 + 8x + 16.")
-    print ( calculaDelta 1 8 16 )
-    putStrLn ("A seguir, tem-se a exemplificacao do calculo da solucao da equacao x^2 + 8x + 16.")
-    print ( calculaSolQuadratica 1 8 16 )
-    putStrLn ("A seguir, tem-se a exemplificacao do calculo do mdc entre os numeros 24 e 12.")
-    print ( calculaMdc 24 12 )
-    putStrLn ("A seguir, tem-se a exemplificacao do calculo do mmc entre os numeros 24 e 12.")
-    print (calculaMmc 24 12)
-    putStrLn "Agradecemos por usar o Programa."
+main = start x
+
+x = ""
+
+start y = do
+		limpaTela
+		inicio
+		numeroMenu <- getLine
+		case numeroMenu of
+			"0" -> sair y
+			"1" -> soma y
+			"2" -> subtracao y
+			"3" -> multiplicacao y
+			"4" -> fat y
+			"5" -> expo y
+			"6" -> ln y
+			"7" -> med y
+			"8" -> equa2 y
+			"9" -> mc y
+			"10" -> dc y
+			"11" -> quad y
+			otherwise -> do {putStrLn "\nOpcao Invalida!"; start y}
+			
+
+sair y = do
+		limpaTela
+		menusair
+		numeroMenu <- getLine
+		case numeroMenu of
+			"1" -> return()
+			"2" -> start y
+			otherwise -> do {putStrLn "\nOpcao Invalida!"; sair y}
+
+
+soma y = do
+		limpaTela
+		menusoma
+
+subtracao y = do
+		limpaTela
+		menusub
+
+multiplicacao y = do
+		limpaTela
+		menumult
+
+fat y = do
+		limpaTela
+		menufat
+
+expo y = do
+		limpaTela
+		menuexp
+
+ln y = do
+		limpaTela
+		menuln
+
+med y = do
+		limpaTela
+		menumedia
+
+equa2 y = do
+		limpaTela
+		menuequa
+
+mc y = do
+		limpaTela
+		menummc
+
+dc y = do
+		limpaTela
+		menumdc
+
+quad y = do
+		limpaTela
+		menuquad
