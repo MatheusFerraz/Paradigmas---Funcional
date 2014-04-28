@@ -24,3 +24,4 @@ calculaDelta va vb vc = ((vb^2) - (4 * va * vc))
 calculaSolQuadratica :: Float -> Float -> Float -> (Float, Float)
 calculaSolQuadratica va vb vc = if(calculaDelta va vb vc) < 0.0  then undefined
 	                            else ((((-vb) + sqrt(calculaDelta va vb vc)) / (2.0 * va)), (((-vb) - sqrt(calculaDelta va vb vc)) / (2.0 * va)))
+	                            

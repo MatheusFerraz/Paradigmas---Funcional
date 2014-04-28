@@ -10,12 +10,12 @@ somaLista (h:t) = h + (somaLista t)
 multiplicaLista :: [Float] -> Float
 multiplicaLista (h:t) = product((h:t))
 
---Funcao para realizar a contagem de elementos em uma lista
+--Funcao para realizar a contagem de elementos em uma Lista utilizando recursividade
 contaLista :: [Float] -> Float
 contaLista [] = 0
 contaLista (h:t) = 1 + (contaLista t)
 
---Funcao para calcular a media de uma lista utilizando chamada de outras funcoes
+--Funcao para calcular a media de uma Lista utilizando chamada de outras funcoes
 media :: [Float] -> Float
 media serie = (somaLista serie) / (contaLista serie)
 
@@ -49,3 +49,4 @@ recTamListas ([],(y:ys)) = error "Lista 1 Vazia!"
 recTamListas ((x:xs),(y:ys)) = 	if length(x:xs) == length(y:ys)
 								then fromIntegral(length(x:xs))
 								else error "Listas de Tamanhos Diferentes!"
+								
