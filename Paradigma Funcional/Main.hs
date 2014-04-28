@@ -1,6 +1,9 @@
 module Main where
 
-import FuncoesGenericas (somaLista, multiplicaLista, subtraiValores, calculaMdc, calculaDelta, calculaSolQuadratica, calculaMmc)
+import Expressoes
+import MinMax
+import MMQ
+import Listas
 
 main = do
     putStrLn "Bem vindo ao programa que simula uma Calculadora simples!"
