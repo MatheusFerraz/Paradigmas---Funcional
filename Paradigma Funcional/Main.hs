@@ -27,6 +27,10 @@ start y = do
 			"9" -> mc y
 			"10" -> dc y
 			"11" -> quad y
+			"12" -> alin y
+			"13" -> apar y
+			"14" -> ahip y
+			"15" -> alog y
 			otherwise -> do {putStrLn "\nOpcao Invalida!"; start y}
 			
 
@@ -83,3 +87,19 @@ dc y = do
 quad y = do
 		limpaTela
 		menuquad
+		
+alin y = do
+		limpaTela
+		menualin
+		
+apar y = do
+		limpaTela
+		menuapar
+		
+ahip y = do
+		limpaTela
+		menuahip
+		
+alog y = do
+		limpaTela
+		menualog
